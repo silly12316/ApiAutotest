@@ -1,0 +1,9 @@
+# 手机过长
+- data: { "mobilephone": "132018899451251", "pwd": "123456" }
+  expect: {"status":0,"code": "20109","msg": "手机号码格式不正确","data": None }
+# 手机过段
+- data: { "mobilephone": "123", "pwd": "123456789012345678"}
+  expect: {"status":0,"code": "20109","msg": "手机号码格式不正确","data": None }
+# 格式不对
+- data: { "mobilephone": "11111111111", "pwd": "123456789012345678","regname":"王大拿"}
+  expect: {"status":0,"code": "20109","msg": "手机号码格式不正确","data": None }
